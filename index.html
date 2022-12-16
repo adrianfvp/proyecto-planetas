@@ -9,7 +9,45 @@
   </head>
   <body>
     <div id="wrapper">
-      <h1>Hello</h1>
+      <nav>
+        <h1>PLANETS</h1>
+        <div id="planets-menu" class="planets-list">
+        </div>
+      </nav>
+      <main>
+        <div class="planet-details">
+          <picture id="planet">
+            <img src="./public/none_planet.png" alt="none" class="planetPic"/>
+          </picture>
+          <div id="planet-info" class="data-planet">
+            <h2>PLANET INFO</h2>
+            <P>Select a planet and discover more information.</P>
+            <div class="button-actions">
+              <button data-action="Overview">Overview</button>
+              <button data-action="Structure">Internal Structure</button>
+              <button data-action="Surface">Surface Geology</button>
+            </div>
+          </div>
+        </div>
+      </main>
+      <div class="extra_data-content">
+        <div class="section_data-tab">
+          <p>Rotation Time</p>
+          <span class="big-span"></span>
+        </div>
+        <div class="section_data-tab">
+          <p>Revolution Time</p>
+          <span class="big-span"></span>
+        </div>
+        <div class="section_data-tab">
+          <p>Radius</p>
+          <span class="big-span"></span>
+        </div>
+        <div class="section_data-tab">
+          <p>Average Temp</p>
+          <span class="big-span"></span>
+        </div>
+      </div>
     </div>
     <script type="module" src="./assets/js/main.js"></script>
   </body>
